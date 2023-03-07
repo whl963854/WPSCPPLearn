@@ -1,5 +1,5 @@
-## WHL的wps作业仓库
-
+## wps作业仓库
+本仓库是金山办公-企业级工程实训设计与实践课程学习内容仓库，**目前已经顺利结课**
 ### week01
 
 `LinkList ` 链表类，封装了构造链表的相关函数打印函数以及销毁链表的函数
@@ -27,11 +27,22 @@
 + `enter` 选择输入数字
 
 ### week06 07
-+ 本次实验ui界面主要在一个ui绘制，导致耦合度略高，因为时间原因没有修改
 + ui界面大体分为四个部分，左边的分组，中间的待办以及输入框部分，以及右边的浮动窗口
 
 ![](./image/%E5%A4%A7%E4%BD%93%E6%A1%86%E6%9E%B6%E5%9B%BE.png)
 
+主要功能包括：
++ 新建分组
++ 修改分组名
++ 新建待办
++ 修改待办名
++ 设置到期时间 提醒日期等
++ 设置优先级并可根据优先级排序
++ 已完成待办自动放置队尾
++ 待办排序功能，排序规则包括名字，优先级，截止时间等
++ 本地数据库保存
+
+主要函数说明：
 + 分组和待办部分采用的QListWidget，浮动设置窗口采用的QDockWidget
 + 主要文件包括：todolist 这是主界面，主要负责将各个页面串联起来
 + addnewgroupdialog是新建分组的弹框
@@ -50,6 +61,12 @@
 + tododata是数据存放构造的数据数据结构
 + savelocat 通过数据库将数据存在本地
 
-数据主要存在groupitemwidget当中，每次切换分组都刷新中间todolistwidget以及左边的dockwidget。在todolistwidget以及dockwidget上面的修改通过信号槽机制传到对应的groupitemwidget。todolistwidget,grouplistwidget右键设有菜单，不过美观性较差。
+数据主要存在groupitemwidget当中，每次切换分组都刷新中间todolistwidget以及左边的dockwidget。在todolistwidget以及dockwidget上面的修改通过信号槽机制传到对应的groupitemwidget。todolistwidget,grouplistwidget右键设有菜单
+
+
+
+
+
+
 
 
