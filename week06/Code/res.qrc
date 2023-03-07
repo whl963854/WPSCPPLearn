@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/Attachment.png</file>
+        <file>res/bg.png</file>
+        <file>res/close.svg</file>
+        <file>res/deadline.svg</file>
+        <file>res/description.svg</file>
+        <file>res/downArrow.svg</file>
+        <file>res/group.svg</file>
+        <file>res/groupListItemMenu.svg</file>
+        <file>res/highPri.svg</file>
+        <file>res/Jinshan.png</file>
+        <file>res/location.svg</file>
+        <file>res/lowPri.svg</file>
+        <file>res/midPri.svg</file>
+        <file>res/nonePri.svg</file>
+        <file>res/notice.svg</file>
+        <file>res/remark.svg</file>
+        <file>res/upArrow.svg</file>
+        <file>res/isRepeat.svg</file>
+    </qresource>
+</RCC>
